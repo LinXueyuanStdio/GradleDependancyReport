@@ -1,0 +1,43 @@
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            maven_aar_with_source(MavenPublication) {
+                from components.java
+
+                groupId POM_GROUP
+                artifactId POM_ARTIFACT_ID
+                version POM_VERSION_NAME
+
+//                artifact(jar)
+//                artifact(source: file(project.buildDir.path + "/outputs/jar/" + "${project.name}-${buildTypeName}.jar"), extension: 'jar') {
+//                    builtBy jarPackage
+//                }
+                pom {
+                    name = POM_NAME
+                    packaging = POM_PACKAGING
+                    description = POM_DESCRIPTION
+                    url = POM_URL
+                    inceptionYear = POM_INCEPTION_YEAR
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'linxueyuan'
+                            name = 'Lin Xueyuan'
+                            email = 'linxy59@mail2.sysu.edu.cn'
+                        }
+                    }
+                }
+            }
+        }
+        repositories {
+            maven { url "file://${gradle.ext.localMavenDir.absolutePath}" }
+        }
+    }
+}

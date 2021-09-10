@@ -1,0 +1,19 @@
+def loadProperties(filename) {
+    Properties properties = new Properties()
+
+    def file = new File(settingsDir, filename)
+
+    if (file.exists()) {
+        properties.load(file.newDataInputStream())
+    } else {
+        logger.warn("Properties file ${file} does not exist")
+    }
+
+    return properties
+}
+
+gradle.ext.appProperties = loadProperties('app.properties')
+gradle.ext.moduleConfig = loadProperties('moduleConfig.properties')
+gradle.ext.localMavenDir = file(gradle.ext.moduleConfig.localMavenPath)
+gradle.ext.localGradleDir = file(gradle.ext.moduleConfig.localGradlePath)
+

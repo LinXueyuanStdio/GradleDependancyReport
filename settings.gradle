@@ -1,0 +1,9 @@
+rootProject.name = 'GradleDependancyReport'
+
+apply from: "context.gradle"
+
+include 'plugin'
+//includeBuild("plugin")
+
+include ':analysis-sample', ':module-library'
+include ':kotlin-sample'

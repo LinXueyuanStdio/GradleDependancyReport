@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        maven { url "file://${gradle.ext.localMavenDir.absolutePath}" }
+        mavenCentral()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
+//        classpath "com.timecat.plugin:report:1.0.0"
+    }
+}
+
+//plugins {
+//    id "com.timecat.plugin.report" apply false
+//}
+
+allprojects {
+    repositories {
+        maven { url "file://${gradle.ext.localMavenDir.absolutePath}" }
+        mavenCentral()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

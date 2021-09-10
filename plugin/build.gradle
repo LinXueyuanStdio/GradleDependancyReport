@@ -1,0 +1,48 @@
+apply plugin: 'groovy'
+apply plugin: 'java-gradle-plugin'
+
+javadoc.options.encoding = 'UTF-8'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation 'com.android.tools.build:gradle:7.0.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.9.0'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    testImplementation('org.spockframework:spock-core:1.0-groovy-2.4') {
+        exclude module: 'groovy-all'
+    }
+    testImplementation 'org.gmock:gmock:0.8.2'
+}
+
+gradlePlugin {
+    plugins {
+        report {
+            // 在 app 模块需要通过 id 引用这个插件
+            id = 'com.timecat.plugin.report'
+            // 实现这个插件的类的路径
+            implementationClass = 'com.timecat.plugin.report.analysis.LibraryAnalysisPlugin'
+        }
+    }
+}
+
+apply from: "${rootDir}/gradle-mvn-push.gradle"

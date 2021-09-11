@@ -5,6 +5,7 @@ import com.timecat.plugin.report.analysis.model.FileDictionary
 import com.timecat.plugin.report.analysis.model.FileInfo
 import com.timecat.plugin.report.analysis.model.Library
 import com.timecat.plugin.report.analysis.util.PackageChecker
+import com.timecat.plugin.report.analysis.util.Logger
 import com.timecat.plugin.report.analysis.util.FileUtils
 import com.timecat.plugin.report.analysis.model.Node
 

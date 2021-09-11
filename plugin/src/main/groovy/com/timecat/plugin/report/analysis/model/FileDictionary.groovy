@@ -3,6 +3,7 @@ package com.timecat.plugin.report.analysis.model
 
 import org.gradle.api.file.FileCollection
 import com.timecat.plugin.report.analysis.util.FileUtils
+import com.timecat.plugin.report.analysis.util.Logger
 
 
 /**

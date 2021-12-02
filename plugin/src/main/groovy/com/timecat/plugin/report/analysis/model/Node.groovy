@@ -17,6 +17,11 @@ class Node {
     long totalSize
     String iconSkin
     String detail
+    String type //"jar" or "aar"
+    String groupId
+    String artifactId
+    int versionCode
+    String versionName
     // 可移除的依赖库（重复添加）
     boolean canRemove
 

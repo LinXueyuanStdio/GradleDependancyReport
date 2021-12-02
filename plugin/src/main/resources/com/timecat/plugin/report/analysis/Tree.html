@@ -10,22 +10,20 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.ztree.core.min.js"></script>
     <SCRIPT LANGUAGE="JavaScript">
-   var zTreeObj;
-   var setting = {
+    var zTreeObj;
+    var setting = {
        view: {
            fontCss: getFont,
            nameIsHTML: true
        }
-   };
-   var zNodes = %nodes%;
-   $(document).ready(function(){
+    };
+    var zNodes = %nodes%;
+    $(document).ready(function(){
       zTreeObj = $.fn.zTree.init($("#dep"), setting, zNodes);
-   });
-   function getFont(treeId, node) {
+    });
+    function getFont(treeId, node) {
        return node.font ? node.font : {};
-   }
-
-
+    }
     </SCRIPT>
 </HEAD>
 <BODY>
@@ -71,7 +69,6 @@
 
 <div class="row">
     <div class="col-md-1">
-
     </div>
     <div class="col-md-10">
         <h3>Dependencies Tree</h3>
@@ -80,18 +77,12 @@
     </div>
 </div>
 
-
 <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="http://cdn.bootcss.com/knockout/3.4.0/knockout-min.js"></script>
-
 <script type="text/javascript">
-    ko.applyBindings(
-            {
-                data:%data%
-            }
-    )
-    ;
-
+    ko.applyBindings({
+        data:%data%
+    });
 </script>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -23,22 +23,35 @@ class HtmlRenderer {
         this.targetDir = target
     }
 
+    class Graph {
+
+    }
+
     public String render(Node root, OutputModuleList list, String msg, LibraryAnalysisExtension ext) {
-        String json = root ? "[${GSON.toJson(root)}]" : '[]'
+        // list view
+        def target_list = new File(targetDir, "data/list.json")
+        def data_list = JsonOutput.toJson(list)
+        target_list.setText(data_list, "UTF-8")
+
+        // tree view
+        def target_tree = new File(targetDir, "data/tree.json")
+        String data_tree = root ? "{\"data\":[${GSON.toJson(root)}]}" : '{\"data\":[]}'
+        target_tree.setText(data_tree, "UTF-8")
+
         if (msg && msg.length() > 0) {
             msg = msg.replace("\r\n", "<br>")
         } else {
             msg = ""
         }
 
-        def modules = JsonOutput.toJson(list)
-        def target = new File(targetDir, "Tree.html")
         def support = ext.showSupport ? ResourceUtils.getTemplateFileContent("support.html") : ""
 
+        String json = root ? "[${GSON.toJson(root)}]" : '[]'
+        def target = new File(targetDir, "Tree.html")
         def html = ResourceUtils.getTemplateFileContent("Tree.html")
                 .replace("%output_support%", support)
                 .replace("%output_msg%", msg)
-                .replace("%data%", modules)
+                .replace("%data%", data_list)
                 .replace("%title%", root.id)
                 .replace("%nodes%", json)
         target.setText(html, "UTF-8")

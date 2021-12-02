@@ -82,7 +82,7 @@ class DependencyTreeReportTask extends DependencyReportTask {
         def timer = new Timer()
 
         def output = prepareOutputPath()
-        ResourceUtils.copyResources(output)
+        ResourceUtils.copyResourcesTo(output)
 
         timer.mark(Logger.W, "copy resources")
 
@@ -125,7 +125,7 @@ class DependencyTreeReportTask extends DependencyReportTask {
 
         def msg = packageChecker.outputPackageRepeatList()
         def list = outputModuleList(rootLib, packageChecker)
-        list.modules.each {
+        list.data.each {
             Logger.D?.log("module: ${it.name}")
         }
 
@@ -176,7 +176,8 @@ class DependencyTreeReportTask extends DependencyReportTask {
                 def pkgName = checker.parseModuleName(key, value.file)
                 def isRepeat = checker.isRepeatPackage(pkgName)
                 list.addModule(new OutputModuleList.DependencyOutput(key, value.size, pkgName,
-                        value.type, isRepeat ? "package name repeat" : "", 0, 0, 0, isRepeat ? "danger" : ""))
+                        value.type, isRepeat ? "package name repeat" : "",
+                        0, 0, 0, isRepeat ? "danger" : ""))
         }
         list.sortModules()
         list

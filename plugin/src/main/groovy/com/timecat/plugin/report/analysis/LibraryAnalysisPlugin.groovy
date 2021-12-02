@@ -1,6 +1,7 @@
 package com.timecat.plugin.report.analysis
 
 import com.timecat.plugin.report.analysis.ext.LibraryAnalysisExtension
+import com.timecat.plugin.report.analysis.task.DependencyTreeReportTask
 import com.timecat.plugin.report.analysis.util.Logger
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -34,7 +35,7 @@ class LibraryAnalysisPlugin implements Plugin<Project> {
             return !it.allDependencies.isEmpty() && getConfigurationSize(it) > 0
         }.each {
             def conf = it.getName()
-            def task = project.tasks.create(genTaskName(conf), com.timecat.plugin.report.analysis.task.DependencyTreeReportTask)
+            def task = project.tasks.create(genTaskName(conf), DependencyTreeReportTask)
             task.dependencyConfiguration = it
             task.group = BASE_GROUP
             task.dependencyExtension = extension

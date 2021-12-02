@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'com.timecat.plugin.report'
+apply plugin: 'com.timecat.plugin.report'
 
 apply plugin: 'kotlin-android'
 
@@ -44,10 +44,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-//libReport {
-////    log = true
-////    fullTree = true
-////    output = [
-////            "txt", "html"
-////    ]
-//}
+libReport {
+//    log = true
+//    fullTree = true
+    output = [
+            "txt", "html"
+    ]
+}

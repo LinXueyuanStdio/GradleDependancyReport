@@ -11,19 +11,19 @@ import com.timecat.plugin.report.analysis.util.FileUtils
  */
 class OutputModuleList {
 
-    List<DependencyOutput> modules = new ArrayList<>()
+    List<DependencyOutput> data = new ArrayList<>()
 
     void sortModules(Closure closure = {
         first, two ->
             two.sizeValue - first.sizeValue
     }) {
-        modules.sort(closure)
+        data.sort(closure)
 
     }
 
     void addModule(DependencyOutput output) {
-        if (!modules.contains(output)) {
-            modules.add(output)
+        if (!data.contains(output)) {
+            data.add(output)
         }
     }
 

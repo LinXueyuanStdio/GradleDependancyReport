@@ -9,6 +9,7 @@ package com.timecat.plugin.report.analysis.model
  * @usage null
  */
 class Node {
+    int identity
     String id
     String name
     boolean open

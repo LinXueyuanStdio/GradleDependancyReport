@@ -1,124 +1,922 @@
 {
     "data": [
         {
-            "name": "一级 1",
-            "id": "1",
-            "fileSize": "1",
-            "totalSize": "1",
-            "iconSkin": "1",
-            "detail": "1",
+            "identity": 0,
+            "id": "project :analysis-sample",
+            "open": true,
             "children": [
                 {
-                    "label": "二级 1-1",
-                    "id": "12",
-                    "fileSize": "1",
-                    "totalSize": "1",
-                    "iconSkin": "1",
-                    "detail": "1",
-                    "children": [
-                        {
-                            "label": "三级 1-1-1",
-                            "id": "123",
-                            "fileSize": "1",
-                            "totalSize": "1",
-                            "iconSkin": "1",
-                            "detail": "1"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "label": "一级 2",
-            "id": "2",
-            "fileSize": "1",
-            "totalSize": "1",
-            "iconSkin": "1",
-            "detail": "1",
-            "children": [
-                {
-                    "label": "二级 2-1",
-                    "id": "21",
-                    "fileSize": "1",
-                    "totalSize": "1",
-                    "iconSkin": "1",
-                    "detail": "1",
-                    "children": [
-                        {
-                            "label": "三级 2-1-1",
-                            "id": "211",
-                            "fileSize": "1",
-                            "totalSize": "1",
-                            "iconSkin": "1",
-                            "detail": "1"
-                        }
-                    ]
+                    "identity": 1,
+                    "id": "com.android.support:multidex:1.0.1",
+                    "name": "android.support.multidex",
+                    "open": true,
+                    "fileSize": 20762,
+                    "totalSize": 20762,
+                    "detail": "com.android.support:multidex:1.0.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
                 },
                 {
-                    "label": "二级 2-2",
-                    "id": "22",
-                    "fileSize": "1",
-                    "totalSize": "1",
-                    "iconSkin": "1",
-                    "detail": "1",
-                    "children": [
-                        {
-                            "label": "三级 2-2-1",
-                            "id": "221",
-                            "fileSize": "1",
-                            "totalSize": "1",
-                            "iconSkin": "1",
-                            "detail": "1"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "label": "一级 3",
-            "id": "3",
-            "fileSize": "1",
-            "totalSize": "1",
-            "iconSkin": "1",
-            "detail": "1",
-            "children": [
-                {
-                    "label": "二级 3-1",
-                    "id": "31",
-                    "fileSize": "1",
-                    "totalSize": "1",
-                    "iconSkin": "1",
-                    "detail": "1",
-                    "children": [
-                        {
-                            "label": "三级 3-1-1",
-                            "id": "311",
-                            "fileSize": "1",
-                            "totalSize": "1",
-                            "iconSkin": "1",
-                            "detail": "1"
-                        }
-                    ]
+                    "identity": 2,
+                    "id": "project :module-library",
+                    "open": true,
+                    "fileSize": 0,
+                    "totalSize": 0,
+                    "detail": "project :module-library",
+                    "versionCode": 0,
+                    "canRemove": false
                 },
                 {
-                    "label": "二级 3-2",
-                    "id": "32",
-                    "fileSize": "1",
-                    "totalSize": "1",
-                    "iconSkin": "1",
-                    "detail": "1",
+                    "identity": 3,
+                    "id": "com.squareup.moshi:moshi:1.2.0",
+                    "name": "",
+                    "open": true,
                     "children": [
                         {
-                            "label": "三级 3-2-1",
-                            "id": "321",
-                            "fileSize": "1",
-                            "totalSize": "1",
-                            "iconSkin": "1",
-                            "detail": "1"
+                            "identity": 4,
+                            "id": "com.squareup.okio:okio:1.8.0",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 72016,
+                            "totalSize": 72016,
+                            "detail": "com.squareup.okio:okio:1.8.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
                         }
-                    ]
+                    ],
+                    "fileSize": 106648,
+                    "totalSize": 178664,
+                    "detail": "com.squareup.moshi:moshi:1.2.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 5,
+                    "id": "com.alibaba:fastjson:1.1.54.android",
+                    "name": "",
+                    "open": true,
+                    "fileSize": 203475,
+                    "totalSize": 203475,
+                    "detail": "com.alibaba:fastjson:1.1.54.android",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 6,
+                    "id": "com.fasterxml.jackson.core:jackson-databind:2.7.0",
+                    "name": "",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 7,
+                            "id": "com.fasterxml.jackson.core:jackson-annotations:2.7.0",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 50894,
+                            "totalSize": 50894,
+                            "detail": "com.fasterxml.jackson.core:jackson-annotations:2.7.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        },
+                        {
+                            "identity": 8,
+                            "id": "com.fasterxml.jackson.core:jackson-core:2.7.0",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 252084,
+                            "totalSize": 252084,
+                            "detail": "com.fasterxml.jackson.core:jackson-core:2.7.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 1198501,
+                    "totalSize": 1501479,
+                    "detail": "com.fasterxml.jackson.core:jackson-databind:2.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 9,
+                    "id": "com.github.Raizlabs.DBFlow:dbflow:3.1.1",
+                    "name": "com.raizlabs.android.dbflow",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 10,
+                            "id": "com.github.Raizlabs.DBFlow:dbflow-core:3.1.1",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 33866,
+                            "totalSize": 33866,
+                            "detail": "com.github.Raizlabs.DBFlow:dbflow-core:3.1.1",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        },
+                        {
+                            "identity": 11,
+                            "id": "com.android.support:support-annotations:24.1.0",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 21786,
+                            "totalSize": 21786,
+                            "detail": "com.android.support:support-annotations:23.1.1 -\u003e 24.1.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 265600,
+                    "totalSize": 321252,
+                    "detail": "com.github.Raizlabs.DBFlow:dbflow:3.1.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 12,
+                    "id": "com.squareup.retrofit:retrofit:1.9.0",
+                    "name": "",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 13,
+                            "id": "com.google.code.gson:gson:2.3.1",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 210856,
+                            "totalSize": 210856,
+                            "detail": "com.google.code.gson:gson:2.3.1",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 121559,
+                    "totalSize": 332415,
+                    "detail": "com.squareup.retrofit:retrofit:1.9.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 14,
+                    "id": "com.squareup.retrofit2:retrofit:2.1.0",
+                    "name": "",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 15,
+                            "id": "com.squareup.okhttp3:okhttp:3.3.0",
+                            "name": "",
+                            "open": true,
+                            "children": [
+                                {
+                                    "identity": 16,
+                                    "id": "com.squareup.okio:okio:1.8.0",
+                                    "name": "",
+                                    "open": false,
+                                    "fileSize": 72016,
+                                    "totalSize": 72016,
+                                    "detail": "com.squareup.okio:okio:1.8.0",
+                                    "type": "jar",
+                                    "versionCode": 0,
+                                    "canRemove": false
+                                }
+                            ],
+                            "fileSize": 343528,
+                            "totalSize": 415544,
+                            "detail": "com.squareup.okhttp3:okhttp:3.3.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 88343,
+                    "totalSize": 503887,
+                    "detail": "com.squareup.retrofit2:retrofit:2.1.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 17,
+                    "id": "com.github.bumptech.glide:glide:3.7.0",
+                    "name": "",
+                    "open": true,
+                    "fileSize": 475187,
+                    "totalSize": 475187,
+                    "detail": "com.github.bumptech.glide:glide:3.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 18,
+                    "id": "com.squareup.picasso:picasso:2.5.2",
+                    "name": "",
+                    "open": true,
+                    "fileSize": 120459,
+                    "totalSize": 120459,
+                    "detail": "com.squareup.picasso:picasso:2.5.2",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 19,
+                    "id": "com.facebook.fresco:fresco:0.13.0",
+                    "name": "com.facebook.drawee.backends.pipeline",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 20,
+                            "id": "com.facebook.fresco:drawee:0.13.0",
+                            "name": "com.facebook.drawee",
+                            "open": true,
+                            "children": [
+                                {
+                                    "identity": 21,
+                                    "id": "com.android.support:support-v4:23.2.1",
+                                    "name": "android.support.v4",
+                                    "open": true,
+                                    "children": [
+                                        {
+                                            "identity": 22,
+                                            "id": "com.android.support:support-annotations:24.1.0",
+                                            "name": "",
+                                            "open": false,
+                                            "fileSize": 21786,
+                                            "totalSize": 0,
+                                            "detail": "com.android.support:support-annotations:23.2.1 -\u003e 24.1.0",
+                                            "type": "jar",
+                                            "versionCode": 0,
+                                            "canRemove": false
+                                        }
+                                    ],
+                                    "fileSize": 1223227,
+                                    "totalSize": 0,
+                                    "detail": "com.android.support:support-v4:23.2.1",
+                                    "type": "aar",
+                                    "versionCode": 0,
+                                    "canRemove": false
+                                },
+                                {
+                                    "identity": 23,
+                                    "id": "com.facebook.fresco:fbcore:0.13.0",
+                                    "name": "com.facebook.fbcore",
+                                    "open": true,
+                                    "fileSize": 95527,
+                                    "totalSize": 95527,
+                                    "detail": "com.facebook.fresco:fbcore:0.13.0",
+                                    "type": "aar",
+                                    "versionCode": 0,
+                                    "canRemove": false
+                                }
+                            ],
+                            "fileSize": 108802,
+                            "totalSize": 204329,
+                            "detail": "com.facebook.fresco:drawee:0.13.0",
+                            "type": "aar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        },
+                        {
+                            "identity": 24,
+                            "id": "com.facebook.fresco:fbcore:0.13.0",
+                            "name": "\u003cs\u003ecom.facebook.fbcore\u003c/s\u003e",
+                            "open": false,
+                            "fileSize": 95527,
+                            "totalSize": 95527,
+                            "detail": "com.facebook.fresco:fbcore:0.13.0",
+                            "type": "aar",
+                            "versionCode": 0,
+                            "canRemove": true
+                        },
+                        {
+                            "identity": 25,
+                            "id": "com.facebook.fresco:imagepipeline:0.13.0",
+                            "name": "com.facebook.imagepipeline",
+                            "open": true,
+                            "children": [
+                                {
+                                    "identity": 26,
+                                    "id": "com.android.support:support-v4:23.2.1",
+                                    "name": "\u003cs\u003eandroid.support.v4\u003c/s\u003e",
+                                    "open": false,
+                                    "fileSize": 1223227,
+                                    "totalSize": 0,
+                                    "iconSkin": "omit",
+                                    "detail": "com.android.support:support-v4:23.2.1",
+                                    "type": "aar",
+                                    "versionCode": 0,
+                                    "canRemove": true
+                                },
+                                {
+                                    "identity": 27,
+                                    "id": "com.facebook.fresco:imagepipeline-base:0.13.0",
+                                    "name": "com.facebook.imagepipelinebase",
+                                    "open": true,
+                                    "children": [
+                                        {
+                                            "identity": 28,
+                                            "id": "com.android.support:support-v4:23.2.1",
+                                            "name": "android.support.v4",
+                                            "open": false,
+                                            "fileSize": 1223227,
+                                            "totalSize": 0,
+                                            "iconSkin": "omit",
+                                            "detail": "com.android.support:support-v4:23.2.1",
+                                            "type": "aar",
+                                            "versionCode": 0,
+                                            "canRemove": false
+                                        },
+                                        {
+                                            "identity": 29,
+                                            "id": "com.parse.bolts:bolts-tasks:1.4.0",
+                                            "name": "",
+                                            "open": true,
+                                            "fileSize": 38092,
+                                            "totalSize": 38092,
+                                            "detail": "com.parse.bolts:bolts-tasks:1.4.0",
+                                            "type": "jar",
+                                            "versionCode": 0,
+                                            "canRemove": false
+                                        },
+                                        {
+                                            "identity": 30,
+                                            "id": "com.facebook.fresco:fbcore:0.13.0",
+                                            "name": "com.facebook.fbcore",
+                                            "open": false,
+                                            "fileSize": 95527,
+                                            "totalSize": 95527,
+                                            "detail": "com.facebook.fresco:fbcore:0.13.0",
+                                            "type": "aar",
+                                            "versionCode": 0,
+                                            "canRemove": false
+                                        }
+                                    ],
+                                    "fileSize": 104107,
+                                    "totalSize": 237726,
+                                    "detail": "com.facebook.fresco:imagepipeline-base:0.13.0",
+                                    "type": "aar",
+                                    "versionCode": 0,
+                                    "canRemove": false
+                                },
+                                {
+                                    "identity": 31,
+                                    "id": "com.parse.bolts:bolts-tasks:1.4.0",
+                                    "name": "\u003cs\u003e\u003c/s\u003e",
+                                    "open": false,
+                                    "fileSize": 38092,
+                                    "totalSize": 38092,
+                                    "detail": "com.parse.bolts:bolts-tasks:1.4.0",
+                                    "type": "jar",
+                                    "versionCode": 0,
+                                    "canRemove": true
+                                },
+                                {
+                                    "identity": 32,
+                                    "id": "com.facebook.fresco:fbcore:0.13.0",
+                                    "name": "\u003cs\u003ecom.facebook.fbcore\u003c/s\u003e",
+                                    "open": false,
+                                    "fileSize": 95527,
+                                    "totalSize": 95527,
+                                    "detail": "com.facebook.fresco:fbcore:0.13.0",
+                                    "type": "aar",
+                                    "versionCode": 0,
+                                    "canRemove": true
+                                }
+                            ],
+                            "fileSize": 1168085,
+                            "totalSize": 1405811,
+                            "detail": "com.facebook.fresco:imagepipeline:0.13.0",
+                            "type": "aar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 12126,
+                    "totalSize": 1526739,
+                    "detail": "com.facebook.fresco:fresco:0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 33,
+                    "id": "com.jakewharton.timber:timber:4.3.0",
+                    "name": "timber.log",
+                    "open": true,
+                    "fileSize": 19148,
+                    "totalSize": 19148,
+                    "detail": "com.jakewharton.timber:timber:4.3.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 34,
+                    "id": "io.reactivex:rxandroid:1.2.1",
+                    "name": "rx.android",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 35,
+                            "id": "io.reactivex:rxjava:1.3.0",
+                            "name": "",
+                            "open": true,
+                            "fileSize": 1155595,
+                            "totalSize": 1155595,
+                            "detail": "io.reactivex:rxjava:1.1.6 -\u003e 1.3.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        }
+                    ],
+                    "fileSize": 9693,
+                    "totalSize": 1165288,
+                    "detail": "io.reactivex:rxandroid:1.2.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 36,
+                    "id": "io.reactivex:rxjava:1.3.0",
+                    "name": "\u003cs\u003e\u003c/s\u003e",
+                    "open": false,
+                    "fileSize": 1155595,
+                    "totalSize": 1155595,
+                    "detail": "io.reactivex:rxjava:1.3.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": true
+                },
+                {
+                    "identity": 37,
+                    "id": "com.jakewharton:butterknife:8.4.0",
+                    "name": "butterknife",
+                    "open": true,
+                    "children": [
+                        {
+                            "identity": 38,
+                            "id": "com.jakewharton:butterknife-annotations:8.4.0",
+                            "name": "",
+                            "open": true,
+                            "children": [
+                                {
+                                    "identity": 39,
+                                    "id": "com.android.support:support-annotations:24.1.0",
+                                    "name": "",
+                                    "open": false,
+                                    "fileSize": 21786,
+                                    "totalSize": 21786,
+                                    "detail": "com.android.support:support-annotations:24.1.0",
+                                    "type": "jar",
+                                    "versionCode": 0,
+                                    "canRemove": false
+                                }
+                            ],
+                            "fileSize": 16588,
+                            "totalSize": 38374,
+                            "detail": "com.jakewharton:butterknife-annotations:8.4.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": false
+                        },
+                        {
+                            "identity": 40,
+                            "id": "com.android.support:support-annotations:24.1.0",
+                            "name": "\u003cs\u003e\u003c/s\u003e",
+                            "open": false,
+                            "fileSize": 21786,
+                            "totalSize": 21786,
+                            "detail": "com.android.support:support-annotations:24.1.0",
+                            "type": "jar",
+                            "versionCode": 0,
+                            "canRemove": true
+                        }
+                    ],
+                    "fileSize": 17397,
+                    "totalSize": 55771,
+                    "detail": "com.jakewharton:butterknife:8.4.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 41,
+                    "id": "com.jakewharton.scalpel:scalpel:1.1.2",
+                    "name": "",
+                    "open": true,
+                    "fileSize": 9800,
+                    "totalSize": 9800,
+                    "detail": "com.jakewharton.scalpel:scalpel:1.1.2",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 42,
+                    "id": "com.jakewharton:process-phoenix:1.0.2",
+                    "name": "com.jakewharton.processphoenix",
+                    "open": true,
+                    "fileSize": 3689,
+                    "totalSize": 3689,
+                    "detail": "com.jakewharton:process-phoenix:1.0.2",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 43,
+                    "id": "com.android.support:multidex:1.0.1",
+                    "name": "android.support.multidex",
+                    "open": false,
+                    "fileSize": 20762,
+                    "totalSize": 20762,
+                    "detail": "com.android.support:multidex:{strictly 1.0.1} -\u003e 1.0.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 44,
+                    "id": "com.squareup.moshi:moshi:1.2.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 106648,
+                    "totalSize": 178664,
+                    "iconSkin": "omit",
+                    "detail": "com.squareup.moshi:moshi:{strictly 1.2.0} -\u003e 1.2.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 45,
+                    "id": "com.alibaba:fastjson:1.1.54.android",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 203475,
+                    "totalSize": 203475,
+                    "detail": "com.alibaba:fastjson:{strictly 1.1.54.android} -\u003e 1.1.54.android",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 46,
+                    "id": "com.fasterxml.jackson.core:jackson-databind:2.7.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 1198501,
+                    "totalSize": 1501479,
+                    "iconSkin": "omit",
+                    "detail": "com.fasterxml.jackson.core:jackson-databind:{strictly 2.7.0} -\u003e 2.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 47,
+                    "id": "com.github.Raizlabs.DBFlow:dbflow:3.1.1",
+                    "name": "com.raizlabs.android.dbflow",
+                    "open": false,
+                    "fileSize": 265600,
+                    "totalSize": 321252,
+                    "iconSkin": "omit",
+                    "detail": "com.github.Raizlabs.DBFlow:dbflow:{strictly 3.1.1} -\u003e 3.1.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 48,
+                    "id": "com.squareup.retrofit:retrofit:1.9.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 121559,
+                    "totalSize": 332415,
+                    "iconSkin": "omit",
+                    "detail": "com.squareup.retrofit:retrofit:{strictly 1.9.0} -\u003e 1.9.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 49,
+                    "id": "com.squareup.retrofit2:retrofit:2.1.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 88343,
+                    "totalSize": 503887,
+                    "iconSkin": "omit",
+                    "detail": "com.squareup.retrofit2:retrofit:{strictly 2.1.0} -\u003e 2.1.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 50,
+                    "id": "com.github.bumptech.glide:glide:3.7.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 475187,
+                    "totalSize": 475187,
+                    "detail": "com.github.bumptech.glide:glide:{strictly 3.7.0} -\u003e 3.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 51,
+                    "id": "com.squareup.picasso:picasso:2.5.2",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 120459,
+                    "totalSize": 120459,
+                    "detail": "com.squareup.picasso:picasso:{strictly 2.5.2} -\u003e 2.5.2",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 52,
+                    "id": "com.facebook.fresco:fresco:0.13.0",
+                    "name": "com.facebook.drawee.backends.pipeline",
+                    "open": false,
+                    "fileSize": 12126,
+                    "totalSize": 1526739,
+                    "iconSkin": "omit",
+                    "detail": "com.facebook.fresco:fresco:{strictly 0.13.0} -\u003e 0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 53,
+                    "id": "com.jakewharton.timber:timber:4.3.0",
+                    "name": "timber.log",
+                    "open": false,
+                    "fileSize": 19148,
+                    "totalSize": 19148,
+                    "detail": "com.jakewharton.timber:timber:{strictly 4.3.0} -\u003e 4.3.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 54,
+                    "id": "io.reactivex:rxandroid:1.2.1",
+                    "name": "rx.android",
+                    "open": false,
+                    "fileSize": 9693,
+                    "totalSize": 1165288,
+                    "iconSkin": "omit",
+                    "detail": "io.reactivex:rxandroid:{strictly 1.2.1} -\u003e 1.2.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 55,
+                    "id": "io.reactivex:rxjava:1.3.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 1155595,
+                    "totalSize": 1155595,
+                    "detail": "io.reactivex:rxjava:{strictly 1.3.0} -\u003e 1.3.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 56,
+                    "id": "com.jakewharton:butterknife:8.4.0",
+                    "name": "butterknife",
+                    "open": false,
+                    "fileSize": 17397,
+                    "totalSize": 55771,
+                    "iconSkin": "omit",
+                    "detail": "com.jakewharton:butterknife:{strictly 8.4.0} -\u003e 8.4.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 57,
+                    "id": "com.jakewharton.scalpel:scalpel:1.1.2",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 9800,
+                    "totalSize": 9800,
+                    "detail": "com.jakewharton.scalpel:scalpel:{strictly 1.1.2} -\u003e 1.1.2",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 58,
+                    "id": "com.jakewharton:process-phoenix:1.0.2",
+                    "name": "com.jakewharton.processphoenix",
+                    "open": false,
+                    "fileSize": 3689,
+                    "totalSize": 3689,
+                    "detail": "com.jakewharton:process-phoenix:{strictly 1.0.2} -\u003e 1.0.2",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 59,
+                    "id": "com.squareup.okio:okio:1.8.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 72016,
+                    "totalSize": 72016,
+                    "detail": "com.squareup.okio:okio:{strictly 1.8.0} -\u003e 1.8.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 60,
+                    "id": "com.fasterxml.jackson.core:jackson-annotations:2.7.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 50894,
+                    "totalSize": 50894,
+                    "detail": "com.fasterxml.jackson.core:jackson-annotations:{strictly 2.7.0} -\u003e 2.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 61,
+                    "id": "com.fasterxml.jackson.core:jackson-core:2.7.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 252084,
+                    "totalSize": 252084,
+                    "detail": "com.fasterxml.jackson.core:jackson-core:{strictly 2.7.0} -\u003e 2.7.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 62,
+                    "id": "com.github.Raizlabs.DBFlow:dbflow-core:3.1.1",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 33866,
+                    "totalSize": 33866,
+                    "detail": "com.github.Raizlabs.DBFlow:dbflow-core:{strictly 3.1.1} -\u003e 3.1.1",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 63,
+                    "id": "com.android.support:support-annotations:24.1.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 21786,
+                    "totalSize": 21786,
+                    "detail": "com.android.support:support-annotations:{strictly 24.1.0} -\u003e 24.1.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 64,
+                    "id": "com.google.code.gson:gson:2.3.1",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 210856,
+                    "totalSize": 210856,
+                    "detail": "com.google.code.gson:gson:{strictly 2.3.1} -\u003e 2.3.1",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 65,
+                    "id": "com.squareup.okhttp3:okhttp:3.3.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 343528,
+                    "totalSize": 415544,
+                    "iconSkin": "omit",
+                    "detail": "com.squareup.okhttp3:okhttp:{strictly 3.3.0} -\u003e 3.3.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 66,
+                    "id": "com.facebook.fresco:drawee:0.13.0",
+                    "name": "com.facebook.drawee",
+                    "open": false,
+                    "fileSize": 108802,
+                    "totalSize": 204329,
+                    "iconSkin": "omit",
+                    "detail": "com.facebook.fresco:drawee:{strictly 0.13.0} -\u003e 0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 67,
+                    "id": "com.facebook.fresco:fbcore:0.13.0",
+                    "name": "com.facebook.fbcore",
+                    "open": false,
+                    "fileSize": 95527,
+                    "totalSize": 95527,
+                    "detail": "com.facebook.fresco:fbcore:{strictly 0.13.0} -\u003e 0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 68,
+                    "id": "com.facebook.fresco:imagepipeline:0.13.0",
+                    "name": "com.facebook.imagepipeline",
+                    "open": false,
+                    "fileSize": 1168085,
+                    "totalSize": 1405811,
+                    "iconSkin": "omit",
+                    "detail": "com.facebook.fresco:imagepipeline:{strictly 0.13.0} -\u003e 0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 69,
+                    "id": "com.jakewharton:butterknife-annotations:8.4.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 16588,
+                    "totalSize": 38374,
+                    "iconSkin": "omit",
+                    "detail": "com.jakewharton:butterknife-annotations:{strictly 8.4.0} -\u003e 8.4.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 70,
+                    "id": "com.android.support:support-v4:23.2.1",
+                    "name": "android.support.v4",
+                    "open": false,
+                    "fileSize": 1223227,
+                    "totalSize": 0,
+                    "iconSkin": "omit",
+                    "detail": "com.android.support:support-v4:{strictly 23.2.1} -\u003e 23.2.1",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 71,
+                    "id": "com.facebook.fresco:imagepipeline-base:0.13.0",
+                    "name": "com.facebook.imagepipelinebase",
+                    "open": false,
+                    "fileSize": 104107,
+                    "totalSize": 237726,
+                    "iconSkin": "omit",
+                    "detail": "com.facebook.fresco:imagepipeline-base:{strictly 0.13.0} -\u003e 0.13.0",
+                    "type": "aar",
+                    "versionCode": 0,
+                    "canRemove": false
+                },
+                {
+                    "identity": 72,
+                    "id": "com.parse.bolts:bolts-tasks:1.4.0",
+                    "name": "",
+                    "open": false,
+                    "fileSize": 38092,
+                    "totalSize": 38092,
+                    "detail": "com.parse.bolts:bolts-tasks:{strictly 1.4.0} -\u003e 1.4.0",
+                    "type": "jar",
+                    "versionCode": 0,
+                    "canRemove": false
                 }
-            ]
+            ],
+            "fileSize": 0,
+            "totalSize": 6344213,
+            "detail": "project :analysis-sample",
+            "versionCode": 0,
+            "canRemove": false
         }
     ]
 }

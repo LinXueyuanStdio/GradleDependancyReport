@@ -59,11 +59,14 @@ class NodeConvert {
         }
     }
 
+    static id = 0
+
     static Node convert(Library lib, Args args, Set<Object> cacheIds = new HashSet<>()) {
         boolean hasAdded = cacheIds.contains(lib.id)
         boolean hasChildren = !lib.children.isEmpty()
 
         Node node = new Node()
+        node.identity = id++
         node.id = lib.id
         node.detail = lib.name
         if (hasAdded && !lib.children.isEmpty() && args.isBrief) {
@@ -127,16 +130,14 @@ class NodeConvert {
         FileInfo info = lib.file
         if (info) {
             node.fileSize = info.size
+            // Android package name
+//            def packageName = parsePackageName(info, args.checker)
+            def packageName = args.checker.parseModuleName(info.id, info.file)
+            // 累计依赖库大小 + 当前依赖库大小 + 依赖库名称
+            node.name = "${packageName ?: ''}"
+            node.type = info.type
+//            node.groupId = lib
         }
-
-        // Android package name
-        def packageName = parsePackageName(info, args.checker)
-
-        // 累计依赖库大小 + 当前依赖库大小 + 依赖库名称
-        node.name = "${packageName ?: ''}"
-        node.type = info.type
-
-        node.groupId = lib
 
         node
     }

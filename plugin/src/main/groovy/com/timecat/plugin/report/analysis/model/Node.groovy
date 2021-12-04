@@ -12,6 +12,7 @@ class Node {
     int identity
     String id
     String name
+    String short_name
     boolean open
     List<Node> children
     long fileSize

@@ -128,15 +128,20 @@ class NodeConvert {
 
         // 存在依赖信息
         FileInfo info = lib.file
+
+        def (txtTotalSize, txtSize, txtType) = outputTxt(info, lib, args, node)
+
+        // Android package name
+        def packageName = parsePackageName(info, args.checker)
+
+        // 累计依赖库大小 + 当前依赖库大小 + 依赖库名称
+        node.name = "${txtTotalSize}${txtSize ?: ''} ${node.detail} ${packageName ?: ''}"
+
         if (info) {
             node.fileSize = info.size
-            // Android package name
-//            def packageName = parsePackageName(info, args.checker)
-            def packageName = args.checker.parseModuleName(info.id, info.file)
+            def packageName2 = args.checker.parseModuleName(info.id, info.file)
             // 累计依赖库大小 + 当前依赖库大小 + 依赖库名称
-            node.name = "${packageName ?: ''}"
-            node.type = info.type
-//            node.groupId = lib
+            node.short_name = "${packageName2 ?: ''}"
         }
 
         node
@@ -151,7 +156,6 @@ class NodeConvert {
     }
 
     private static List outputTxt(FileInfo info, Library lib, Args args, Node node) {
-        // TODO 它定义到name里了，应该直接保存到字段才行，所以砍了。这里有些信息可用
         def txtType = null
         def txtSize = null
 
